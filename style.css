@@ -88,7 +88,7 @@ h1, h2{
     border-radius: 40px;
 }
 
-@media(max-width:994px){
+@media(max-width:1024px){
     .matrix{
         width: 99%;
     }
