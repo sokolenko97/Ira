@@ -5,12 +5,12 @@
 }
 
 :root{
-    --bar-width: 60px;
-    --bar-height: 8px;
-    --hamburger-gap: 6px;
+    --bar-width: 40px;
+    --bar-height: 6px;
+    --hamburger-gap: 5px;
     --foreground: #776B5D;
     --background: white;
-    --hamburger-margin: 8px;
+    --hamburger-margin: 18px;
     --animation-timing: 200ms ease-in-out;
     --hamburger-height: calc(var(--bar-height) * 3 + var(--hamburger-gap) * 2)
 }
@@ -32,6 +32,12 @@
 .hamburger-menu:has(input:checked) {
     --foreground: white;
     --background: #776B5D;
+}
+
+.hamburger-menu:has(:focus-visible)::before,
+.hamburger-menu:has(:focus-visible)::after,
+.hamburger-menu input:focus-visible{
+    border: 1px solid var(--background);
 }
 
 .hamburger-menu::before,
@@ -77,8 +83,8 @@
     padding-top: calc(var(--hamburger-height) + var(--hamburger-margin) + 1rem);
     background-color: var(--foreground);
     color: var(--background);
-    min-height: 100vh;
-    max-width: 17rem;
+    min-height: 10vh;
+    max-width: 10rem;
     overflow: hidden;
 }
 
