@@ -10,7 +10,7 @@
     --hamburger-gap: 5px;
     --foreground: #776B5D;
     --background: white;
-    --hamburger-margin: 18px;
+    --hamburger-margin: 28px;
     --animation-timing: 200ms ease-in-out;
     --hamburger-height: calc(var(--bar-height) * 3 + var(--hamburger-gap) * 2)
 }
@@ -34,10 +34,11 @@
     --background: #776B5D;
 }
 
-.hamburger-menu:has(:focus-visible)::before,
-.hamburger-menu:has(:focus-visible)::after,
+.hamburger-menu:has(input:focus-visible)::before,
+.hamburger-menu:has(input:focus-visible)::after,
 .hamburger-menu input:focus-visible{
-    border: 1px solid var(--background);
+    border: 1px solid var(--foreground);
+    box-shadow: 0 0 0 1px var(--background);
 }
 
 .hamburger-menu::before,
@@ -78,18 +79,29 @@
 
 .sidebar{
     transition: translate var(--animation-timing);
-    translate: -100%;
+    translate: -110%;
     padding: 0.5rem 1rem;
     padding-top: calc(var(--hamburger-height) + var(--hamburger-margin) + 1rem);
     background-color: var(--foreground);
     color: var(--background);
-    min-height: 10vh;
-    max-width: 10rem;
+    min-height: 50vh;
+    max-width: 15rem;
     overflow: hidden;
+    border-radius: 40px;
+    opacity: 0.8;
+}
+
+.link{
+    opacity: 1;
+    margin-bottom: 5px;
 }
 
 .hamburger-menu:has(input:checked) + .sidebar {
     translate: 0;
+}
+
+header{
+    position: absolute;
 }
 
 html{
@@ -110,24 +122,21 @@ body{
     overflow: hidden;
 }
 
-/* .menu a{
+.link{
     text-decoration: none;
+    color: white;
+    font-size: 17px;
 }
-.menu li{
-    list-style: none;
-    margin-right: 10px;
-    background-color: white;
-    border-radius: 40px;
-    text-align: center;
-    position: relative;
+.sidebar li{
+    margin: 0 0 10px 0;
 }
 
-.menu.list{
+/* .menu.list{
     display: flex;
 }
 .menu.link{
     color: #776B5D;
-} */
+} */ */
 
 .title{
     text-align: center;
