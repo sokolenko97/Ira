@@ -154,10 +154,6 @@ p{
     margin: 20px 0;
 }
 
-span{
-    color: #FDFFAE;
-}
-
 h1{
     font-size: 50px;
     border-bottom: 3px dotted #776B5D;
@@ -186,7 +182,7 @@ h4{
     margin: 10px 0;
 }
 
-.blue{
+.dark-block{
     background-color: #776B5D;
     max-width: 100%;
     color: #F3EEEA;
@@ -194,6 +190,18 @@ h4{
     padding: 30px 20px;
     border-radius: 40px;
     margin: 0 auto;
+}
+
+.dark-block li{
+    margin-bottom: 10px;
+}
+
+.dark-block ol{
+    margin-bottom: 0;
+}
+
+span{
+    color: #FDFFAE;
 }
 
 ul{
@@ -205,24 +213,24 @@ ul{
     .matrix{
         width: 99%;
     }
-    body, .blue{
+    body, .dark-block{
         font-size: 15px;
     }
     h1{
         font-size: 17px;
         width: 90%;
-        padding: 10px 0;
+        padding: 20px 0;
         margin: 0 auto 10px auto;
     }
-    h4{
+    h4, h3{
         font-size: 15px;
         margin: 5px 0;
     }
-    .blue{
+    .dark-block{
         max-width: 100%;
-        padding: 20px 20px;
+        padding: 20px 20px 10px 20px;
     }
-    ul{
+    ul, ol{
         padding: 0 10px 5px 10px;
     }
     .block{
