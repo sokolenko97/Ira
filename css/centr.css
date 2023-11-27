@@ -144,6 +144,11 @@ main{
     text-align: justify;
 }
 
+main, footer{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 h1,h2,h3{
     text-transform: uppercase;
     margin-bottom: 30px;
