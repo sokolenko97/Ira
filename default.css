@@ -211,7 +211,7 @@ ul{
 
 @media(max-width:1024px){
     .matrix{
-        width: 100%;
+        width: 99%;
     }
     body, .dark-block{
         font-size: 15px;
