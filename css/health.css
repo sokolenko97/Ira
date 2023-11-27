@@ -1,13 +1,25 @@
 @import url(./default.css);
 
+main{
+    padding: 0;
+}
+
+body{
+    margin: 0 1px;
+}
+
 .grid-container{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 2fr;
     grid-template-rows: 50px 50px 50px 50px 50px 50px 50px 50px 50px;
-    gap: 5px;
+    gap: 3px;
     overflow: hidden;
     padding: 10px;
     margin-bottom: 20px;
+    .card p{
+        white-space: nowrap;
+        overflow: hidden;
+    }
 }
 
 .card > h2,h3,p{
@@ -60,9 +72,110 @@
     background-color: #cc3333;
 }
 
+p{
+    font-size: 20px;
+}
+
+.grid-container-decrypt{
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 1fr;
+    grid-template-rows: 80px 100px 85px 70px570px 100px 100px 100px;
+    gap: 3px;
+    overflow:auto;
+    margin-bottom: 20px;
+    .card{
+        background-color: #fff;
+        color: black;
+    }
+
+    .card p, .card h4{
+        padding: 0;
+        margin: 0;
+    }
+    .card p{
+        text-align: left;
+    }
+
+    .name p, .first p{
+        text-align: center;
+    }
+    .first p{
+        text-align: left;
+        font-weight: bold;
+        margin: 0px 0px 0 5px;
+    }
+
+    .name.card{
+        color: black;
+    }
+
+    .name.first{
+        padding-top: 1.4em;
+    }
+    .seven.first{
+        background-color:#993399;
+        padding-top: 2em;
+    }
+    
+    .six.first{
+        background-color: #3366ff;
+        padding-top: 1.4em;
+    }
+    
+    .five.first{
+        background-color: #33ccff;
+        padding-top: 1.3em;
+    }
+    
+    .four.first{
+        background-color: #90c747;
+        padding-top: 0.7em;
+    }
+    
+    .three.first{
+        background-color: #ffff99;
+        color: #776B5D;
+        padding-top: 1.1em;
+    }
+    
+    .two.first{
+        background-color:#ff9900;
+        padding-top: 2em;
+    }
+    
+    .one.first{
+        background-color: #cc3333;
+        padding-top: 2em;
+    }
+    .first{
+        color: white;
+        
+    }
+}
+
+
 @media (max-width:1024px) {
     .card{
         font-size: 20px;
-        white-space: nowrap;;
+    }
+    .total h3{
+        font-size: 20px;
+    }
+    .grid-container-decrypt p{
+        font-size: 12px;
+    }
+    .grid-container p{
+        padding-left: 7px;
+    }
+    .dark-block p{
+        font-size: 15px;
+        margin: 0;
+        padding: 10px;
+        text-align: left;
+
+    }
+
+    .dark-block{
+        padding: 20px;
     }
 }
