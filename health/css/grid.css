@@ -1,0 +1,99 @@
+@import url(../../css/default.css);
+
+body{
+    margin: 0 1px;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 2fr;
+    grid-template-rows: 50px 50px 50px 50px 50px 50px 50px 50px 50px;
+    gap: 3px;
+    overflow: hidden;
+    padding: 10px;
+    margin-bottom: 20px;
+    .card p{
+        white-space: nowrap;
+        overflow: hidden;
+    }
+}
+
+.card a{
+    color: #FDFFAE;
+}
+
+.card > h2,h3,p{
+    margin: 0;
+    padding: 15px 0 0 0 ;
+    text-align: center;
+}
+
+.card{
+    background-color: #cccccc;
+    color: white;
+}
+
+.last > h3, .last > p{
+    text-align: left;
+    padding-left: 10%;
+}
+
+.name.card{
+    background-color:#f4f4f6;
+    color: #776B5D;
+}
+
+.seven.card{
+    background-color:#993399;
+}
+
+.six.card{
+    background-color: #3366ff;
+}
+
+.five.card{
+    background-color: #33ccff;
+}
+
+.four.card{
+    background-color: #90c747;
+}
+
+.three.card{
+    background-color: #ffff99;
+    color: #776B5D;
+}
+
+.three a{
+    color: #776B5D;
+}
+
+.two.card{
+    background-color:#ff9900;
+}
+
+.one.card{
+    background-color: #cc3333;
+}
+
+@media (max-width:1024px) {
+    .card{
+        font-size: 20px;
+    }
+    .total h3{
+        font-size: 20px;
+    }
+    .grid-container-decrypt p{
+        font-size: 12px;
+    }
+    .grid-container p{
+        padding-left: 7px;
+    }
+    .dark-block p{
+        font-size: 15px;
+        margin: 0;
+        padding: 10px;
+        text-align: left;
+    }
+
+}

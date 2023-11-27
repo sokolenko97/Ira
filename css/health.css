@@ -22,6 +22,10 @@ body{
     }
 }
 
+.card a{
+    color: #FDFFAE;
+}
+
 .card > h2,h3,p{
     margin: 0;
     padding: 15px 0 0 0 ;
@@ -61,6 +65,10 @@ body{
 
 .three.card{
     background-color: #ffff99;
+    color: #776B5D;
+}
+
+.three a{
     color: #776B5D;
 }
 
