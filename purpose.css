@@ -7,15 +7,3 @@
 ol a{
     color: #FDFFAE;
 }
-
-.matrix{
-    margin: 0;
-    padding-bottom: 0;
-}
-
-
-@media (max-width: 1024px){
-    .title{
-        padding: 5px 0 0px 0px;
-    }
-}
