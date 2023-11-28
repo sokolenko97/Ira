@@ -60,4 +60,7 @@ main{
     .grid-container{
         padding: 5px;
     }
+    .open.first{
+        padding: 0;
+    }
 }
