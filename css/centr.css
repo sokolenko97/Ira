@@ -106,7 +106,7 @@ html{
 }
 
 body{
-    font-size: 30px;
+    font-size: 20px;
     font-family: sans-serif;
     color: #776B5D;
     background-color:#F3EEEA;
@@ -164,7 +164,7 @@ span{
 }
 
 h1{
-    font-size: 50px;
+    font-size: 40px;
     border-bottom: 3px dotted #776B5D;
     margin: 0 auto 30px auto;
     padding: 20px 0;
@@ -175,7 +175,7 @@ h1{
     border: 3px solid #776B5D;
     margin-bottom: 10px;
     border-radius: 40px;
-    max-width: 100%;
+    max-width: 60%;
 }
 
 /* h3{
@@ -195,7 +195,7 @@ h4{
     background-color: #776B5D;
     max-width: 100%;
     color: #F3EEEA;
-    font-size: 30px;
+    font-size: 20px;
     padding: 30px 20px;
     border-radius: 40px;
     margin: 0 auto;
@@ -207,9 +207,7 @@ ul{
 }
 
 @media(max-width:1024px){
-    .matrix{
-        width: 99%;
-    }
+    
     body, .blue{
         font-size: 15px;
     }
@@ -238,5 +236,11 @@ ul{
     }
     .menu.list{
         display: block;
+    }
+}
+
+@media (max-width:768px){
+    .matrix{
+        max-width: 100%;
     }
 }
