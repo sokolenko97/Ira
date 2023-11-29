@@ -20,6 +20,8 @@ body{
 
 .card a{
     color: #FDFFAE;
+    display: inline-block;
+    padding: 0 10px;
 }
 
 .card > h2,h3,p{
