@@ -16,15 +16,16 @@ main{
 
 .block p{
     text-align: left;
+    padding: 10px;
 }
 
-/* .dark-block{
-    padding: 20px;
-    margin-bottom: 10px;
-} */
+
 
 @media (max-width:1024px) {
-
+    .matrix.small{
+    object-fit: cover;
+    max-height: 300px;
+}
     .matrix{
      margin: 0;
      padding: 0;
