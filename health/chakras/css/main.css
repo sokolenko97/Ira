@@ -26,6 +26,9 @@ main{
     object-fit: cover;
     max-height: 300px;
 }
+    .small.bigger{
+        max-height: 400px;
+    }
     .matrix{
      margin: 0;
      padding: 0;
